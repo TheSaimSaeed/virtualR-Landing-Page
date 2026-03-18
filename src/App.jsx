@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/navbar'
 import HeroSection from './components/HeroSection'
+import Features from './components/Features'
 
 export const App = () => {
   return (
@@ -10,6 +11,7 @@ export const App = () => {
       <div className='max-w-7x1 mx-auto pt-2 px-6'>
         <HeroSection/>
     </div>
+    <Features/>
     </>
    
   )
