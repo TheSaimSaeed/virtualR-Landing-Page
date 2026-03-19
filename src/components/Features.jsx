@@ -3,10 +3,10 @@ import { features } from "../constants/index";
 
 const Features = () => {
   return (
-    <div className="flex flex-col justify-center mt-10 items-center">
+    <div className="flex flex-col justify-center mt-10 items-center relative">
       <a
         href="#"
-        className="bg-neutral-200 p-3 rounded-lg text-center uppercase bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent font-medium"
+        className="bg-neutral-900 p-3 rounded-full text-orange-400 text-center uppercase  font-medium"
       >
         Features
       </a>
@@ -17,16 +17,16 @@ const Features = () => {
         </span>
       </h1>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap w-4/5">
         {features.map((feature, index) => (
-          <div className="flex w-full lg:w-1/3 sm:w-1/2">
+          <div className="flex w-full lg:w-1/3 sm:w-1/2 py-10">
             <div key={index} className="">
-              <div className="text-orange-400">{feature.icon}</div>
+              <div className="flex mx-3 h-10 w-10  bg-neutral-900 text-orange-700 justify-center items-center rounded-full  ">{feature.icon}</div>
             </div>
 
-            <div className="flex flex-col">
-              <h5>{feature.text}</h5>
-              <p>{feature.description}</p>
+            <div className="flex flex-col space-y-3">
+              <h5 className="font-medium ml-2">{feature.text}</h5>
+              <p className="p-2 ">{feature.description}</p>
             </div>
           </div>
         ))}
