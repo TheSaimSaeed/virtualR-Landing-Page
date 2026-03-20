@@ -10,7 +10,7 @@ const Features = () => {
       >
         Features
       </a>
-      <h1 className="py-10 lg:text-7xl sm:text-6xl font-medium">
+      <h1 className="py-10 lg:text-6xl sm:text-5xl font-medium">
         EASILY BUILD{" "}
         <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
           YOUR CODE

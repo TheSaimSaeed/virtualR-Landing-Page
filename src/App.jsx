@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/navbar'
 import HeroSection from './components/HeroSection'
 import Features from './components/Features'
+import WorkFlow from './components/WorkFlow'
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
         <HeroSection/>
     </div>
     <Features/>
+    <WorkFlow/>
     </>
    
   )
